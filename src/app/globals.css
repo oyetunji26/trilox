@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.section {
+  @apply px-5  md:px-16  py-5
+}
+
+/* glassmorphism */
+.glass {
+  @apply  bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 z-[1000] border-0;
+}
+
+.navbar {
+  @apply section flex justify-between shadow-sm py-6 bg-black text-white;
+}
+
+/* navbar onScroll */
+.scrolled {
+  @apply fixed bg-[#000]/80 glass w-full;
+}
+
+.bg-album-cover {
+  background: url('../components/assets/images/asake3.jpg');
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  @apply object-cover mx-auto
+}
