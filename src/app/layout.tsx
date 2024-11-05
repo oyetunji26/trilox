@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Outfit, Rubik, Oswald } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import { NavBar , Footer } from "@/components/Widgets";
 
@@ -15,8 +15,8 @@ import { NavBar , Footer } from "@/components/Widgets";
 // });
 
 const outfit = Outfit({subsets : ["latin"]})
-const rubik = Rubik({subsets : ["latin"]})
-const oswald = Oswald({subsets : ["latin"]})
+// const rubik = Rubik({subsets : ["latin"]})
+// const oswald = Oswald({subsets : ["latin"]})
 
 export const metadata: Metadata = {
   title: "Trilox",

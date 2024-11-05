@@ -1,5 +1,4 @@
 'use client';
-import { Ribeye } from 'next/font/google';
 import React from 'react';
 import Image from 'next/image';
 import * as image from '../assets/images';
@@ -7,9 +6,7 @@ import { RxArrowTopRight } from "react-icons/rx";
 import { MdOutlineSpatialAudio } from "react-icons/md";
 import { IoPlaySkipForward, IoPlay } from "react-icons/io5";
 import { MdLocalFireDepartment } from "react-icons/md";
-// import { IoPlay } from "react-icons/io5";
-import { FaFaceGrinStars } from "react-icons/fa6";
-import { RiMusic2Line } from 'react-icons/ri';
+
 import { TbMusicStar } from 'react-icons/tb';
 
 const Hero = () => {
