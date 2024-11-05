@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Outfit, Rubik, Oswald } from "next/font/google";
 import "./globals.css";
 import { NavBar , Footer } from "@/components/Widgets";
@@ -32,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${oswald.className}`}
+        className={`${outfit.className}`}
       >
         <NavBar />
         {children}

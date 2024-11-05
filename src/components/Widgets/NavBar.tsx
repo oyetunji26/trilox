@@ -13,13 +13,13 @@ const NavBar = () => {
       title: "About Us", ref: "#about"
     },
     {
-      title: "Contact", ref: ""
+      title: "Our Mission", ref: "#mission"
     },
     {
-      title: "Download", ref: ""
+      title: "Team", ref: "#team"
     },
     {
-      title: "Support", ref: ""
+      title: "Contact", ref: "#contact"
     },
   ]
     // onScroll navbar becomes fixed and given a glassMorphism styling
@@ -53,7 +53,7 @@ const NavBar = () => {
             <li>Support</li> */}
             {
               navProps?.map((items: any, i: number) => (
-                <Link href={items?.ref} className={` ${active == i ? 'text-white' : 'text-white/60'}`} onClick={() => setActive(i)}>
+                <Link key={i} href={items?.ref} className={` ${active == i ? 'text-white' : 'text-white/60'}`} onClick={() => setActive(i)}>
                   {items?.title}
                 </Link>
               ))

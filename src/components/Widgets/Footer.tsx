@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='' id='about'>
-      <div className='grid grid-cols-2 gap-3 py-4 pt-10 section place-items-center bg-black/60 min-h-[200px]'>
+    <footer className=''>
+      <div className='grid md:grid-cols-2 gap-3 py-4 pt-10 section place-items-center bg-black/60 min-h-[200px]'>
         <div className='text-2xl'>
           <p className='w-4/6 text-white/90'>Sign Up To Never Miss Your Favorite Show live</p>
         </div>

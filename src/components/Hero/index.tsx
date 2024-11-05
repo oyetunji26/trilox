@@ -14,8 +14,8 @@ import { TbMusicStar } from 'react-icons/tb';
 
 const Hero = () => {
   return (
-    <div className='bg-black h-[70vh] text-white section overflow-y-visible'>
-      <div className="grid grid-cols-2 items-center gap-4">
+    <div className='bg-black h-[70vh] text-white section overflow-y-visible max-md:py-40'>
+      <div className="grid md:grid-cols-2 items-center gap-4">
         <div className=' text-right -mt-10 leading-relaxed relative'>
         {/* <FaFaceGrinStars size={45} className='absolute top-0 -left-7 text-white/60'/> */}
         <TbMusicStar size={45} className='absolute top-0 left-7 text-white/60 text-purple-600'/>
@@ -30,7 +30,7 @@ const Hero = () => {
             <button className='my-1.5 bg-purple-800 h-fit rounded-3xl py-2 px-3 text-sm shadow-sm'>Book for a session*</button>
           </div>
 
-          <div className="bg-white shadow rounded-lg flex mt-3 justify-between items-center py-4 pl-4 h-[150px] -mb-14">
+          <div className="bg-white shadow rounded-lg flex mt-3 justify-between items-center py-4 pl-4 h-[150px] md:-mb-14">
             <div className='text-black/60 text-left'>
               <p className='text-sm font-semibold'>New Release</p>
               <p className='font-bold text-2xl text-black/85'>Lungu boy ft korede bello</p>
