@@ -14,9 +14,7 @@ const Mission = () => {
                 {/* <p className='text-3xl my-3 text-center'>Who We are</p> */}
                 <SectionTitle title='Our Mission' otherStyles={'my-2'} />
                 <p className='text-gray-700 leading-loose'>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est esse atque beatae ratione quia at tenetur aspernatur magnam numquam, error nam sed alias non repudiandae illo odit quo cupiditate. Illum.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas illum provident illo molestiae molestias quo, ipsum, nam consequatur ex veniam, praesentium dignissimos dicta eius distinctio voluptates fuga asperiores nemo voluptatibus?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eum et, tempore ipsam inventore facere voluptate deserunt repellendus fuga ad. Tempore ipsa similique repellat doloribus. Quod soluta saepe dolorem molestiae?
+                  We aim to reshape the music industry by empowering, developing, and promoting independent artists and with the right support systems. We strive to showcase Nigerian and African entertainment culture, beliefs, and heritage to the global stage, therefore bridging the gap between African music and international audiences to create a sustainable career paths for our talents globally.
                 </p>
             </div>
         </div>

@@ -9,7 +9,7 @@ import Mission from "@/components/About/Mission";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="bg-grid-white/[0.2]">
       <Hero />
       <About />
       <Numbers />

@@ -8,16 +8,30 @@ import { IoPlaySkipForward, IoPlay } from "react-icons/io5";
 import { MdLocalFireDepartment } from "react-icons/md";
 
 import { TbMusicStar } from 'react-icons/tb';
+import { TextGenerateEffect } from "../ui/text-generate-effect";
+import { motion } from 'framer-motion';
 
 const Hero = () => {
+  const words = "Hear Music All Around";
   return (
     <div className='bg-black h-[70vh] text-white section overflow-y-visible max-md:py-40'>
       <div className="grid md:grid-cols-2 items-center gap-4">
         <div className=' text-right -mt-10 leading-relaxed relative'>
         {/* <FaFaceGrinStars size={45} className='absolute top-0 -left-7 text-white/60'/> */}
-        <TbMusicStar size={45} className='absolute top-0 left-7 text-white/60 text-purple-600'/>
+        {/* <TbMusicStar size={45} className='absolute top-0 left-7 text-white/60 text-purple-600'/> */}
+        <motion.div
+      initial={{ rotate: 0 }}
+      animate={{ rotate: 10 }}
+      transition={{ duration: 1, ease: 'easeInOut', repeat: Infinity, reverse: true }}
+      className='absolute top-0 left-7'
+    >
+      <TbMusicStar size={45} className='text-white/60 text-purple-600' />
+    </motion.div>
         
-          <h2 className='text-7xl'>Hear Music All Around</h2>
+          {/* <h2 className='text-7xl text-white'> */}
+            <TextGenerateEffect words={words} className='text-white text-7xl'/>
+
+          {/* </h2> */}
           <div className="flex justify-between">
             <div className='pt-8'>
               {/* <Ribeye /> */}
