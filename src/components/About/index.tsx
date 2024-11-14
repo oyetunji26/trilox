@@ -6,10 +6,10 @@ import * as image from '../assets/images'
 
 const About = () => {
   return (
-    <div className='section bg-blue-100/70 py-10' id='about'>
-        <div className="grid grid-cols-2 flex-col-reverse mt-40 gap-5 items-center">
+    <div className='section bg-blue-100/70 py-4 md:py-10' id='about'>
+        <div className="grid md:grid-cols-2 max-md:flex max-md:flex-col-reverse mt-40 gap-5 items-center">
             <div className='z-50'>
-                <Image src={image.Asake5} width={1000} height={1000} alt='askae' className='obk  md:h-[80vh] object-cover w-5/6 mx-auto rounded-3xl -mb-20 z-50' />
+                <Image src={image.Asake5} width={1000} height={1000} alt='askae' className='obk  md:h-[80vh] object-cover w-5/6 mx-auto rounded-3xl md:-mb-20 z-50' />
             </div>
             <div className='flex flex-col gap-4 text-gray-800'>
                 <h3 className='text-xl font-semibold'>ABOUT STONEGATE</h3>

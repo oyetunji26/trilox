@@ -5,22 +5,22 @@ import * as image from '../assets/images';
 
 const Numbers = () => {
   return (
-    <div className='min-h-[90vh] bg-blue-100/70  px-44 py-20 relative'>
-        <div className='flex justify-between pt-28 items-start'>
+    <div className='min-h-[90vh] bg-blue-100/70  px-44 md:py-20 relative max-md:flex-col gap-y-9'>
+        <div className='md:flex md:justify-between max-md:my-3 pt-28 items-start max-md:text-center'>
             <div>
-                <p className='text-5xl font-semibold'>
-                    100 <span className='text-4xl font-normal'><em>m +</em></span>
+                <p className='text-5xl font-semibold flex '>
+                    100 <span className='text-4xl font-normal'><em>m+</em></span>
                 </p>
                 <p className='text-lg'>Songs</p>
             </div>
-            <Image src={image.Asake2} width={1000} height={1000} alt='asake' className=' rounded-full size-44 object-fill' />
+            <Image src={image.Asake2} width={1000} height={1000} alt='asake' className='max-md:hidden rounded-full size-28 md:size-44 object-fill' />
         </div>
-        <div className='text-5xl mx-auto text-center font-semibold'>
+        <div className='text-5xl mx-auto text-center max-md:my-3 font-semibold'>
             <p>75<span className='text-4xl font-normal'><em>m+</em></span></p>
             <p className='text-lg'>Playlists</p>
         </div>
-        <div className='flex  justify-between pt-28 items-start'>
-            <Image src={image.Asake3} width={1000} height={1000} alt='asake' className=' rounded-full size-56 object-fill' />
+        <div className='md:flex  justify-between md:pt-28 max-md:my-3  items-start max-md:text-center'>
+            <Image src={image.Asake3} width={1000} height={1000} alt='asake' className='max-md:hidden rounded-full size-28 md:size-56 object-fill' />
             <div>
                 <p className='text-5xl font-semibold'>
                     10<span className='text-4xl font-normal'><em>k+</em></span>

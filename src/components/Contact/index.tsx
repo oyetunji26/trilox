@@ -18,7 +18,7 @@ const Contact = () => {
     <div className='section' id='contact'>
         {/* <h3 className='text-3xl'>Contact Us</h3> */}
         <SectionTitle title='Contact Us' otherStyles={'md:my-16'}/>
-        <div className="grid grid-cols-2 gap-5 my-6 shadow rounded-lg p-4 py-8">
+        <div className="grid md:grid-cols-2 max-md:flex-col-reverse gap-5 my-6 shadow rounded-lg p-4 py-8">
             <div className="flex flex-col gap-4">
                 <div className='grid grid-cols-2 gap-2'>
                     <FormField type='text' placeholder='input firstname' value={form.firstName} handleChange={(e: ChangeEvent<HTMLInputElement>) => setForm({ ...form, firstName: e.target.value })}/>

@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   const words = "Hear Music All Around";
   return (
-    <div className='bg-black h-[70vh] text-white section overflow-y-visible max-md:py-40'>
+    <div className='bg-black md:h-[70vh] text-white section overflow-y-visible max-md:py-10'>
       <div className="grid md:grid-cols-2 items-center gap-4">
         <div className=' text-right -mt-10 leading-relaxed relative'>
         {/* <FaFaceGrinStars size={45} className='absolute top-0 -left-7 text-white/60'/> */}
@@ -29,7 +29,7 @@ const Hero = () => {
     </motion.div>
         
           {/* <h2 className='text-7xl text-white'> */}
-            <TextGenerateEffect words={words} className='text-white text-7xl'/>
+            <TextGenerateEffect words={words} className='text-white text-7xl max-md:py-3'/>
 
           {/* </h2> */}
           <div className="flex justify-between">
@@ -60,7 +60,7 @@ const Hero = () => {
           </div>
         </div>
         <div className=''>
-          <div className=' rounded-3xl h-[80vh] w-4/5 shadow bg-album-cover relative'>
+          <div className=' rounded-3xl h-[80vh] md:w-4/5 shadow bg-album-cover relative mt-10'>
             <span className='absolute top-4 right-4 px-2 flex items-center gap-1.5 py-1 text-xs bg-black/40 rounded-3xl border border-white/40'>
               TRENDING <MdLocalFireDepartment size={17} />
             </span>

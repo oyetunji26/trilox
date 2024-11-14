@@ -16,7 +16,7 @@ const TeamMates = ({
     <div className='relative  grid place-items-center'>
         <Image src={img} width={1000} height={1000} alt={name} className='object-cover  h-[300px] rounded-xl' />
         <div className='flex flex-col text-center justify-center'>
-            <h4 className='text-3xl font-semibold' style={{
+            <h4 className='md:text-3xl text-2xl font-semibold' style={{
                 textShadow: '2px 2px #ff000'
             }}>
                 {name} 
