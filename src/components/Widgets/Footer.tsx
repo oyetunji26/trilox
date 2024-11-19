@@ -1,4 +1,5 @@
 import React from 'react'
+import { RiInstagramLine, RiLinkedinLine, RiTwitterLine } from 'react-icons/ri';
 
 const Footer = () => {
   return (
@@ -7,9 +8,9 @@ const Footer = () => {
         <div className='text-2xl'>
           <p className='w-4/6 text-white/90'>Sign Up To Never Miss Your Favorite Show live</p>
         </div>
-        <div>
+        <div className='max-w-full'>
           <div className='bg-white flex shadow border'>
-            <input type='email' className='grow px-3 outline-0'  placeholder='your Email Address' />
+            <input type='email' className=' px-3 outline-0'  placeholder='your Email Address' />
             <button className='px-4 py-3 bg-black text-white'>Suscribe</button>
           </div>
         </div>
@@ -20,7 +21,7 @@ const Footer = () => {
 
         <div className='grid md:grid-cols-[3fr__1.2fr__1.2fr__1.2fr] gap-3'>
           <div className='flex flex-col gap-3 md:pl-3'>
-            <h2 className='text-2xl font-semibold'>Trilox Music</h2>
+            <h2 className='text-3xl font-semibold'>Trilox Music</h2>
             <p className='text-black/60'>Trilox Music is ipsum dolor sit amet, consectet adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
           </div>
 
@@ -48,12 +49,16 @@ const Footer = () => {
           <div className='flex flex-col gap-3'>
             <h2 className='text-xl font-medium'>Official Social Media</h2>
 
-            <ul>
+            <ul className='flex gap-2 text-black/60'>
               <li className=''>
-                
+                <RiInstagramLine className='' size={26} />
               </li>
-              <li className=''></li>
-              <li className=''></li>
+              <li className=''>
+                <RiTwitterLine size={26} />
+              </li>
+              <li className=''>
+                <RiLinkedinLine size={26} />
+              </li>
             </ul>
           </div>
         </div>

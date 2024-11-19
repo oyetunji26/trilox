@@ -1,6 +1,11 @@
+'use client';
 import React from 'react'
+import SectionTitle from '../Widgets/SectionTitle';
+import Image from 'next/image';
+import * as image from '../assets/images';
 
-const OurServices = () => {
+
+const Services = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const servicesArray = [
         {
@@ -35,8 +40,33 @@ const OurServices = () => {
         }
       ];
   return (
-    <div>OurServices</div>
+    <div className='section py-16' id='services'>
+      <SectionTitle title='Our Services' otherStyles={'my-4'} />
+
+      <div className='flex gap-4 overflow-x-scroll w-full'>
+ 
+        {
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
+          servicesArray?.map((item: any, i : number) => {
+            return (
+              <div key={i} className='border min-w-[80%] md:min-w-[30%] rounded-2xl'>
+                <Image src={image?.Asake3} width={1000} height={1000} alt='' className='max-h-[200px] object-cover rounded-2xl' />
+                <div className='px-2 py-2'>
+                  <p className='text-lg font-semibold text-black/80'>
+                    {item?.title}
+                  </p>
+
+                  <p className='text-sm text-balance text-black/60'>
+                    {item?.content}
+                  </p>
+                </div>
+              </div>
+            )
+          })
+        }
+      </div>
+    </div>
   )
 }
 
-export default OurServices
+export default Services
