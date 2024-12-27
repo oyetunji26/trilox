@@ -3,8 +3,8 @@ import { RiInstagramLine, RiLinkedinLine, RiTwitterLine } from 'react-icons/ri';
 
 const Footer = () => {
   return (
-    <footer className=''>
-      <div className='grid md:grid-cols-2 gap-3 py-4 pt-10 section place-items-center bg-black/60 min-h-[200px]'>
+    <footer className='pb-8'>
+      {/* <div className='grid md:grid-cols-2 gap-3 py-4 pt-10 section place-items-center bg-black/60 min-h-[200px]'>
         <div className='text-2xl'>
           <p className='w-4/6 text-white/90'>Sign Up To Never Miss Your Favorite Show live</p>
         </div>
@@ -14,7 +14,7 @@ const Footer = () => {
             <button className='px-4 py-3 bg-black text-white'>Suscribe</button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <div className='section py-10 h-[40vh] grid place-items-center bg-white/70'>
 
@@ -40,9 +40,9 @@ const Footer = () => {
             <h2 className='text-xl font-medium'>Contact details</h2>
 
             <ul className='flex flex-col gap-1.5 text-black/60'>
-              <li>3 London Uk</li>
+              <li>Pacific abode, Harris Drive, Lekki, Lagos State</li>
               <li>support@trilox.com</li>
-              <li>(+234 80 64500750)</li>
+              <li>(+234 90 6504 2980 , +234-8067-035-000 )</li>
             </ul>
           </div>
 

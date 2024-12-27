@@ -14,7 +14,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
-  const words = "Hear Music All Around";
+  const words = "Bringing the change music needs.";
   return (
     <div className="bg-black md:h-[70vh] text-white section overflow-y-visible max-md:py-10">
       <div className="grid md:grid-cols-2 items-center gap-4">
@@ -38,7 +38,7 @@ const Hero = () => {
           {/* <h2 className='text-7xl text-white'> */}
           <TextGenerateEffect
             words={words}
-            className="text-white text-7xl max-md:py-3"
+            className="text-white text-4xl max-md:py-3"
           />
 
           {/* </h2> */}
@@ -53,9 +53,22 @@ const Hero = () => {
                 EXPERIENCE <br /> SPATIAL STUDIO
               </p>
             </div>
-            <button className="my-1.5 bg-purple-800 h-fit rounded-3xl py-2 px-3 text-sm shadow-sm">
+            {/* <button className="my-1.5 bg-purple-800 h-fit rounded-3xl py-2 px-3 text-sm shadow-sm">
               Book for a session*
-            </button>
+            </button> */}
+            <motion.div
+              initial={{ rotate: 0 }}
+              animate={{ rotate: 360 }}
+              transition={{
+                duration: 1.9,
+                ease: "easeInOut",
+                repeat: Infinity,
+                reverse: true,
+              }}
+              className="bgpurple-800 grid place-items-center"
+            >
+              <TbMusicStar size={45} className=" text-purple-600" />
+            </motion.div>
           </div>
 
           <div className="bg-white shadow rounded-lg flex mt-3 justify-between items-center py-4 pl-4 h-[150px] md:-mb-14">
@@ -86,7 +99,34 @@ const Hero = () => {
         </div>
 
         <div className="">
-          <Carousel
+          <div className=" rounded-3xl h-[80vh]  shadow bg-albumcover relative mt-10">
+            <Image
+              src={image?.Asake2}
+              width={1000}
+              height={1000}
+              alt=""
+              className=" rounded-3xl w-full h-full object-cover"
+            />
+            <span className="absolute top-4 right-4 px-2 flex items-center gap-1.5 py-1 text-xs bg-black/40 rounded-3xl border border-white/40">
+              TRENDING <MdLocalFireDepartment size={17} />
+            </span>
+            <div className="h-1/8 absolute bottom-0 bg-black/30 glass w-full py-6 rounded-b-2xl px-7 flex items-center justify-between">
+              <div>
+                <h2 className="text-xl capitalize">Money na water</h2>
+                {/* <p className="text-sm text-white/70">Work of art</p> */}
+                <p className="text-sm text-white/70">Mdiva new release</p>
+              </div>
+
+              <div className="flex gap-3 items-center">
+                {/* <button className="rounded-full p-2 text-white bg-purple-400  ">
+                      <IoPlay size={18} />
+                    </button>
+                    <IoPlaySkipForward size={20} className="text-white" /> */}
+              </div>
+            </div>
+          </div>
+
+          {/* <Carousel
             autoPlay={true}
             infiniteLoop={true}
             showThumbs={false}
@@ -110,20 +150,16 @@ const Hero = () => {
                 </span>
                 <div className="h-1/8 absolute bottom-0 bg-black/30 glass w-full py-6 rounded-b-2xl px-7 flex items-center justify-between">
                   <div>
-                    <h2 className="text-xl capitalize">Lonely at the Top</h2>
-                    <p className="text-sm text-white/70">Work of art</p>
+                    <h2 className="text-xl capitalize">Money na water</h2>
+                    <p className="text-sm text-white/70">Mdiva new release</p>
                   </div>
 
                   <div className="flex gap-3 items-center">
-                    {/* <button className="rounded-full p-2 text-white bg-purple-400  ">
-                      <IoPlay size={18} />
-                    </button>
-                    <IoPlaySkipForward size={20} className="text-white" /> */}
                   </div>
                 </div>
               </div>
             ))}
-          </Carousel>
+          </Carousel>  */}
         </div>
       </div>
     </div>

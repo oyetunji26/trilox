@@ -13,7 +13,7 @@ export default function Home() {
     <main className="bg-grid-white/[0.2]">
       <Hero />
       <div className="bg-blue-100/70 ">
-        <About />
+        {/* <About /> */}
         <Numbers />
       </div>
       <WhoWeAre />

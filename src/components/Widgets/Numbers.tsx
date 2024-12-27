@@ -5,7 +5,7 @@ import * as image from '../assets/images';
 
 const Numbers = () => {
   return (
-    <div className='min-h-[90vh] section  md:px-44 md:py-20 relative max-md:flex-col  gap-y-9'>
+    <div className='md:min-h-[90vh]fit min-h- section  md:px-44 md:py-20 relative max-md:flex-col  gap-y-9'>
         <div className='flex justify-between max-md:py-3 pt-28 items-start max-md:text-center'>
             <div>
                 <p className='text-5xl font-semibold flex '>
