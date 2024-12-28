@@ -1,6 +1,6 @@
 // import Image from "next/image";
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+// import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Team from "@/components/Team";
 import Numbers from "@/components/Widgets/Numbers";

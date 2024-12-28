@@ -11,7 +11,7 @@ import { TbMusicStar } from "react-icons/tb";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { motion } from "framer-motion";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 
 const Hero = () => {
   const words = "Bringing the change music needs.";
